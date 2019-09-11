@@ -15,10 +15,10 @@ Parameters:
 
 Resources:
   # list of AWS resources we want created or updated
-  MyVPC: # logical ID
+  MyVPC: # logical ID to be used when the VPC is not created.
     Type: AWS::EC2::VPC
     Properties:
-      CidrBlock: 10.0.0.0/16
+      CidrBlock: 10.0.0.0/16 # there are other options we could use but those haev defaults , only cidr dont have defaults
 
 Mappings:
   # collection of nested key/value pairs
